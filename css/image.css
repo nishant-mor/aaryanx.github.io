@@ -1,10 +1,10 @@
-<style>
+
 div.gallery {
   border: 1px solid #ccc;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid rgb(212, 175, 55);
 }
 
 div.gallery img {
@@ -15,6 +15,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  color:rgb(212, 175, 55);
 }
 
 * {
@@ -45,4 +46,3 @@ div.desc {
   display: table;
   clear: both;
 }
-</style>
