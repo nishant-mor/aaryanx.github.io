@@ -1,0 +1,58 @@
+<HTML>
+    <HEAD>
+    <TITLE>DESIGN</TITLE>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    </HEAD>
+    <BODY BGCOLOR="black">
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid"></div>      
+                <a href="design1.html" class="button">PHOTOGRAPHY</a>
+                <b>|</b>
+                <a href="design2.html" class="button">VISUAL</a>
+            </div>
+        </nav>
+        <script>
+            var dest =["Abhinandan.jpg", "CSinfinity.jpg", "RealEducation.png", "WebMadam.png"];
+            var i;
+            for(i=0; i<dest.length; i++)
+            {
+                document.write(
+                    "<div class='responsive'> <div class='gallery'> <img class='myImg' src='images/Visual/"+dest[i]+"' width='600px' height='400px' onclick='openModal("+i+")'> <div class='desc'>"+dest[i].substring(0, dest[i].length-4)+"</div> </div> </div>"
+                    );
+            }
+        </script>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick='closeModal()'>&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+                
+        <script>
+                var img = document.getElementsByClassName('myImg');
+
+                var description = document.getElementsByClassName('desc');
+                
+
+                function openModal(n) {
+                    document.getElementById('myModal').style.display = "block";
+                    
+                    
+                    var modalImg = document.getElementById("img01");
+                    modalImg.src=img[n].src;
+
+                    
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML=description[n].innerHTMTL;
+                }
+
+                function closeModal() {
+                    document.getElementById('myModal').style.display = "none";
+                }
+        </script>
+    </BODY>
+</HTML>

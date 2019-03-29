@@ -1,0 +1,58 @@
+<HTML>
+    <HEAD>
+    <TITLE>DESIGN</TITLE>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    </HEAD>
+    <BODY BGCOLOR="black">
+            <nav class="navbar navbar-inverse navbar-fixed-bottom" text-align="center">
+                <div class="container-fluid">
+                    <a href="design1.html" class="button">PHOTOGRAPHY</a>
+                    <b>|</b>
+                    <a href="design2.html" class="button">VISUAL</a>
+                </div>
+            </nav>
+        <script>
+            var dest =["DSCF7608.jpg", "IMG_20170913_170217.jpg", "IMG_20171101_151350~2.jpg", "IMG_20171216_185052.jpg", "IMG_20180204_164345~2.jpg", "IMG_20180408_140942~2.jpg", "IMG_20180426_163205.jpg", "IMG_20170121_145559.jpg", "IMG_20170913_170259.jpg", "IMG_20171103_154710.jpg", "IMG_20171231_130902.jpg", "IMG_20180208_213855.jpg", "IMG_20180408_141427.jpg", "IMG_20180428_113214~2.jpg", "IMG_20170121_150712.jpg", "IMG_20170913_172401.jpg", "IMG_20171109_153510.jpg", "IMG_20171231_130937.jpg", "IMG_20180220_100531~2.jpg", "IMG_20180414_172746.jpg", "IMG_20180726_094503~2.jpg", "IMG_20170913_143103.jpg", "IMG_20171008_161533~2.jpg", "IMG_20171126_150603~2.jpg", "IMG_20180121_140016.jpg", "IMG_20180404_130717.jpg", "IMG_20180421_140651~2.jpg", "IMG_20170913_170112.jpg", "IMG_20171020_211521.jpg", "IMG_20171205_070351.jpg", "IMG_20180121_144209.jpg", "IMG_20180404_130913.jpg", "IMG_20180425_142314.jpg"];
+            var i;
+            for(i=0; i<dest.length; i++)
+            {
+                document.write(
+                    "<div class='responsive'> <div class='gallery'> <img class='myImg' src='images/Photography/"+dest[i]+"' width='600px' height='400px' onclick='openModal("+i+")'> <div class='desc'>"+(i+1)+"</div> </div> </div>"
+                    );
+            }
+        </script>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick='closeModal()'>&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+                
+        <script>
+                var img = document.getElementsByClassName('myImg');
+
+                var description = document.getElementsByClassName('desc');
+                
+
+                function openModal(n) {
+                    document.getElementById('myModal').style.display = "block";
+                    
+                    
+                    var modalImg = document.getElementById("img01");
+                    modalImg.src=img[n].src;
+
+                    
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML=description[n].innerHTMTL;
+                }
+
+                function closeModal() {
+                    document.getElementById('myModal').style.display = "none";
+                }
+        </script>
+    </BODY>
+</HTML>

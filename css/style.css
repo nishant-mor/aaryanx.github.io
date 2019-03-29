@@ -10,9 +10,11 @@
         text-decoration: none;
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.4s;
-        width: 100px;
+        width: auto;
+        padding-left:10px;
+        padding-right:10px;
     }
+
     .button:hover{
         border: 2px solid rgb(212, 175, 55);
     }
-    
