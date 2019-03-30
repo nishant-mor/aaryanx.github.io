@@ -43,11 +43,11 @@
                     
                     
                     var modalImg = document.getElementById("img01");
-                    modalImg.src=img[n].src;
+                    modalImg.src=write.document("images/Compressed/Photography/"+dest[n]);
 
                     
                     var captionText = document.getElementById("caption");
-                    captionText.innerHTML=document.write("images/Compressed/Photography/"+dest[n]);
+                    captionText.innerHTML=description[n].innerHTMTL;
                 }
 
                 function closeModal() {
