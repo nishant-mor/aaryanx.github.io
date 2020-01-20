@@ -1,0 +1,36 @@
+
+    h1{
+        color:rgb(212, 175, 55);
+        text-align: center;
+        font-family: Lucida Sans Unicode;
+    }
+    p{
+        color:rgb(212, 175, 55);
+        text-align: center;
+        font-family: Lucida Sans Unicode;
+    }
+
+    form{
+        color:rgb(212, 175, 55);
+        text-align: center;
+        font-family: Lucida Sans Unicode;
+    }
+    input{
+        color:rgb(212, 175, 55);
+        text-align: center;
+        font-family: Lucida Sans Unicode;
+    }
+    .button{
+        display: inline-block;
+        color: rgb(212, 175, 55);
+        text-decoration: none;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        width: auto;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .button:hover{
+        border: 2px solid rgb(212, 175, 55);
+    }
