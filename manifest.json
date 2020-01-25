@@ -1,7 +1,7 @@
 {
     "name": "Aaryanx",
-    "short_name" : "PWA",
-    "start_url": "index.html",
+    "short_name" : "Aaryanx",
+    "start_url": "index.php",
     "scope" : "./",
     "icons": [
         {
